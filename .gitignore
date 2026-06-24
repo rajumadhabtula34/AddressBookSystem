@@ -20,6 +20,7 @@ Thumbs.db
 
 # IntelliJ files (if opened in IntelliJ)
 .idea/
+
 *.iml
 
 # VS Code files

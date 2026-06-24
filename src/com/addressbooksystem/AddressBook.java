@@ -27,5 +27,15 @@ public class AddressBook {
             System.out.println("Contact Updated Successfully");
             System.out.println("Updated City : " + contact.city);
         }
+        
+    }
+    public void deleteContact() {
+
+        if (contact.firstName.equals("Raju")) {
+
+            contact = null;
+
+            System.out.println("Contact Deleted Successfully");
+        }
     }
 }
