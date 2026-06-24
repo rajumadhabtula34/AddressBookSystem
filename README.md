@@ -1,11 +1,18 @@
-# UC2 - Edit Contact
+# UC1 - Add Contact
 
 ## Objective
 
-Edit existing Contact using Person Name.
+Create a Contact in Address Book.
 
 ## Features
 
-* Search Contact
-* Update Contact Details
-* Display Updated Information
+* Create Contact Person
+* Store personal details
+* Display Contact Details
+
+## OOP Concepts Used
+
+* Class
+* Object
+* Association
+
