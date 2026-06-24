@@ -1,23 +1,11 @@
-# Address Book System
+# UC2 - Edit Contact
 
-## Description
+## Objective
 
-Address Book System is a Java console application used to manage contacts.
+Edit existing Contact using Person Name.
 
-### Features
+## Features
 
-* Welcome message display
-* Add Contact
-* Edit Contact
-* Delete Contact
-* Multiple Contacts Management
-
-### Technologies Used
-
-* Java
-* Eclipse IDE
-* Git & GitHub
-
-### Author
-
-Raju
+* Search Contact
+* Update Contact Details
+* Display Updated Information
