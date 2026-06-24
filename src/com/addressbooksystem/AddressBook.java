@@ -2,40 +2,30 @@ package com.addressbooksystem;
 
 
 
+
+
+import java.util.ArrayList;
+
 public class AddressBook {
 
-    Contact contact = new Contact();
+    ArrayList<Contact> contacts = new ArrayList<>();
 
-    public void addContact() {
-
-        contact.firstName = "Raju";
-        contact.lastName = "Raj";
-        contact.address = "Bangalore";
-        contact.city = "Bangalore";
-        contact.state = "Karnataka";
-        contact.zip = "560001";
-        contact.phoneNumber = "9876543210";
-        contact.email = "raju@gmail.com";
+    public void addContact(Contact contact) {
+        contacts.add(contact);
     }
 
-    public void editContact() {
+    public void displayContacts() {
 
-        if (contact.firstName.equals("Raju")) {
+        for (Contact contact : contacts) {
 
-            contact.city = "Hyderabad";
-
-            System.out.println("Contact Updated Successfully");
-            System.out.println("Updated City : " + contact.city);
-        }
-        
-    }
-    public void deleteContact() {
-
-        if (contact.firstName.equals("Raju")) {
-
-            contact = null;
-
-            System.out.println("Contact Deleted Successfully");
+            System.out.println("\nFirst Name : " + contact.firstName);
+            System.out.println("Last Name : " + contact.lastName);
+            System.out.println("Address : " + contact.address);
+            System.out.println("City : " + contact.city);
+            System.out.println("State : " + contact.state);
+            System.out.println("Zip : " + contact.zip);
+            System.out.println("Phone Number : " + contact.phoneNumber);
+            System.out.println("Email : " + contact.email);
         }
     }
 }

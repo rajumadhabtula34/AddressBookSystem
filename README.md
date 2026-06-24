@@ -1,11 +1,15 @@
-# UC3 - Delete Contact
+# UC4 - Multiple Contacts
 
 ## Objective
 
-Delete existing Contact using Person Name.
+Store multiple Contacts in Address Book.
 
 ## Features
 
-* Search Contact
-* Delete Contact
-* Confirmation Message
+* Add Multiple Contacts
+* Store Contacts using ArrayList
+* Display All Contacts
+
+## Collections Used
+
+* ArrayList
