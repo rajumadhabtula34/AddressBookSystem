@@ -16,15 +16,16 @@ public class AddressBook {
         contact.zip = "560001";
         contact.phoneNumber = "9876543210";
         contact.email = "raju@gmail.com";
+    }
 
-        System.out.println("\nContact Added Successfully");
-        System.out.println("First Name : " + contact.firstName);
-        System.out.println("Last Name : " + contact.lastName);
-        System.out.println("Address : " + contact.address);
-        System.out.println("City : " + contact.city);
-        System.out.println("State : " + contact.state);
-        System.out.println("Zip : " + contact.zip);
-        System.out.println("Phone Number : " + contact.phoneNumber);
-        System.out.println("Email : " + contact.email);
+    public void editContact() {
+
+        if (contact.firstName.equals("Raju")) {
+
+            contact.city = "Hyderabad";
+
+            System.out.println("Contact Updated Successfully");
+            System.out.println("Updated City : " + contact.city);
+        }
     }
 }
