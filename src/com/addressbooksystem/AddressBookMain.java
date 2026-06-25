@@ -1,8 +1,4 @@
-
 package com.addressbooksystem;
-
-
-
 
 public class AddressBookMain {
 
@@ -10,10 +6,12 @@ public class AddressBookMain {
 
         System.out.println("Welcome to Address Book");
 
-        AddressBook addressBook = new AddressBook();
+        AddressBookSystem system = new AddressBookSystem();
+
+        AddressBook home = new AddressBook();
+        AddressBook office = new AddressBook();
 
         Contact contact1 = new Contact();
-
         contact1.firstName = "Raju";
         contact1.lastName = "Raj";
         contact1.address = "Bangalore";
@@ -24,7 +22,6 @@ public class AddressBookMain {
         contact1.email = "raju@gmail.com";
 
         Contact contact2 = new Contact();
-
         contact2.firstName = "Ram";
         contact2.lastName = "Kumar";
         contact2.address = "Hyderabad";
@@ -34,9 +31,19 @@ public class AddressBookMain {
         contact2.phoneNumber = "9876543211";
         contact2.email = "ram@gmail.com";
 
-        addressBook.addContact(contact1);
-        addressBook.addContact(contact2);
+        home.addContact(contact1);
+        office.addContact(contact2);
 
-        addressBook.displayContacts();
+        system.addAddressBook("Home", home);
+        system.addAddressBook("Office", office);
+
+        System.out.println("\nAvailable Address Books:");
+        system.displayAddressBooks();
+
+        System.out.println("\nHome Address Book:");
+        home.displayContacts();
+
+        System.out.println("\nOffice Address Book:");
+        office.displayContacts();
     }
 }
